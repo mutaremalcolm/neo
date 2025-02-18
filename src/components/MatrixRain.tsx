@@ -1,4 +1,15 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react';
+import { css } from '@linaria/core';
+import React from 'react'
+
+const styles = css`
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: black;
+`;
 
 const MatrixRain = () => {
     const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -16,7 +27,7 @@ const MatrixRain = () => {
         const characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
         const fontSize = 16;
         const columns = Math.floor(canvas.width / fontSize);
-        const drops = Array(columns).fill(1);
+        const drops: number[] = new Array(columns).fill(1);
 
         const draw = () => {
             ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
@@ -50,7 +61,7 @@ const MatrixRain = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    return <canvas ref={canvasRef} className='absolute top-0 left-0 w-full h-full' />;
+    return <canvas ref={canvasRef} className={styles} />;
 };
 
 export default MatrixRain;
