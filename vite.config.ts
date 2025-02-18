@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite'
-import wyw from '@wyw-in-js/vite';
+import wyw from '@wyw-in-js/vite'
 
 // https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(()=> ({
   plugins: [
     wyw({
       include: ['**/*.{ts,tsx}'],
@@ -11,4 +11,6 @@ export default defineConfig({
       },
     }),
   ],
-});
+}));
+    
+ 
