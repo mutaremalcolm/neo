@@ -3,7 +3,7 @@
 <!-- -------------------------------------------------------------------------- -->
 <!-- HEADING STUFF  -->
 <div align="center">
-  <h2>Matrix Rain Digital Screen</h2>
+  <h2>Matrix Digital Rain Screen</h2>
   <h4>A Vite Application for my first dive with Linaria Styling library</h4>
   <h3>
     <a href='https://matrix-digital-rain-screen.vercel.app/' target='_blank'>
