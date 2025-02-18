@@ -1,50 +1,75 @@
-# React + TypeScript + Vite
+<a name="readme-top"></a>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<!-- -------------------------------------------------------------------------- -->
+<!-- HEADING STUFF  -->
+<div align="center">
+  <h2>Matrix Rain Digital Screen</h2>
+  <h4>A Vite Application for my first dive with Linaria Styling library</h4>
+  <h3>
+    <a href='https://matrix-digital-rain-screen.vercel.app/' target='_blank'>
+      <h5>Live Demo ↗</h5>
+    </a>
+  </h3>
+</div>
 
-Currently, two official plugins are available:
+<!-- -------------------------------------------------------------------------- -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 👋 Introduction:
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+I have had my head wrapped up in the Matrix movie trilogy lately. Their identifiable rain digital screen with the numbers falling down caught my attention and i wanted to reproduce it in a React application for a little fun and practice. Hence i ended up creating this project.
 
-- Configure the top-level `parserOptions` property like this:
+In addition i just learnt about a CSS library Linaria and i decided to try it out in this application. I therefore initially made the app with Tailwind for styling and then converted the styles to Linaria so i could see how Linaria works as well as have something to compare it to. I marked the tailwind version as V1 and will leave the git branch unpruned for reference, the Linaria styled branch will become Prod/Main
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+I had fun with this small experiment and in total i dedicated about 2 hours to put everything together, for both the research and implementing the solution in code.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+<br/>
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### 🔑 Features:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+---
+
+#### Technology Stack:
+
+✔ **Vite + React** A collection of curated AWS-related questions to test and reinforce your knowledge.
+
+✔ **Tailwind for styling(initially)** A sleek and responsive interface built with React and Next.js to ensure a seamless experience.
+
+<br/>
+
+<!-- #### Bonus Features:
+
+✔ **Persistent Data:** Utilize localStorage to save your progress so you can resume where you left off.
+
+✔ **Feedback Notifications:** Get unobtrusive notifications after completing a question or section.
+
+✔ **Customizable Exam Simulation:** Mimic real exam conditions with a timer and customizable question sets.
+
+✔ **Google Analytics For User Data Collection:** Google Analytics to be able to track user traffic and behaviours on the application, to see points of improvement based on collected data.
+
+<br/> -->
+
+<!-- -------------------------------------------------------------------------- -->
+
+<!-- ### 🎯 Future Improvements:
+
+---
+
+
+💥 Convert the application into a PWA to enable users to download and use the web app as a mobile application.
+
+💥 Add AI-powered personalized study recommendations based on user performance.
+
+💥 Enhance styling with dynamic themes and animations for a more engaging user experience.
+
+💥 Integrate a leaderboard for collaborative learning and competition among users.
+
+💥 Expand question categories to cover all AWS certification levels (e.g., Associate, Professional, Specialty).
+
+<br/> -->
+
+<!-- -------------------------------------------------------------------------- -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<br/> <br/>
