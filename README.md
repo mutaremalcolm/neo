@@ -22,7 +22,7 @@ I have had my head wrapped up in the Matrix movie trilogy lately. Their identifi
 
 In addition i just learnt about a CSS library Linaria and i decided to try it out in this application. I therefore initially made the app with Tailwind for styling and then converted the styles to Linaria so i could see how Linaria works as well as have something to compare it to. I marked the tailwind version as V1 and will leave the git branch unpruned for reference, the Linaria styled branch will become Prod/Main
 
-I had fun with this small experiment and in total i dedicated about 2 hours to put everything together, for both the research and implementing the solution in code.
+I had fun with this small experiment and in total i dedicated about 2 hours to put everything together, for both the research and implementing the solution in code. The bulk of my time was spent on learning how to configure Linaria to work, it was pretty insightful and the documentation was very well written and helpful. 
 
 <br/>
 
