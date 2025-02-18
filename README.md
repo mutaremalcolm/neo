@@ -32,7 +32,7 @@ I had fun with this small experiment and in total i dedicated about 2 hours to p
 
 #### Technology Stack:
 
-✔ **Vite + React** A collection of curated AWS-related questions to test and reinforce your knowledge.
+✔ **Vite + React** Chosen for its lighweight and quick build.
 
 ✔ **Tailwind for styling(initially)** A sleek and responsive interface built with React and Next.js to ensure a seamless experience.
 
