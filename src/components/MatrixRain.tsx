@@ -3,6 +3,7 @@ import { styled } from '@linaria/react';
 
 // Styled canvas component using Linaria
 const Canvas = styled.canvas`
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -17,12 +18,21 @@ const MatrixRain = () => {
     useEffect(() => {
         const canvas = canvasRef.current;
         if (!canvas) return;
+
         const ctx = canvas.getContext('2d');
-        if (!ctx) return;
+        if (!ctx) {
+            console.error('Could not get 2D context');
+            return;
+        }
 
         // Set canvas size
+        try {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
+        } catch (error) {
+            console.error('Error setting canvas dimensions:', error)
+            return;
+        }
 
         const characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
         const fontSize = 16;
