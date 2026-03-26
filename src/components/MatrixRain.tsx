@@ -4,12 +4,13 @@ import { styled } from '@linaria/react';
 // Styled canvas component using Linaria
 const Canvas = styled.canvas`
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: black;
+  z-index: 0;
 `;
 
 const MatrixRain = () => {
@@ -34,7 +35,7 @@ const MatrixRain = () => {
             return;
         }
 
-        const characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const characters = 'RebotileModika';
         const fontSize = 16;
         const columns = Math.floor(canvas.width / fontSize);
         const drops = new Array(columns).fill(1);
@@ -76,7 +77,7 @@ const MatrixRain = () => {
         };
     }, []);
 
-    return <Canvas ref={canvasRef} />;
+    return<Canvas ref={canvasRef} />;
 };
 
 export default MatrixRain;
