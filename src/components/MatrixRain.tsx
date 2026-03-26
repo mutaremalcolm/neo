@@ -35,7 +35,7 @@ const MatrixRain = () => {
             return;
         }
 
-        const characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const characters = 'RebotileModika';
         const fontSize = 16;
         const columns = Math.floor(canvas.width / fontSize);
         const drops = new Array(columns).fill(1);
